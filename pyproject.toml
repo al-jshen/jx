@@ -9,11 +9,20 @@ python = "^3.9,<3.11"
 jaxlib = {url = "https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.0+cuda11.cudnn82-cp310-none-manylinux2010_x86_64.whl"}
 jax = {version = "^0.3.1", extras = ["cuda11_cudnn82"]}
 tqdm = "^4.63.1"
+geopandas = "^0.10.2"
+cmdstanpy = "^1.0.1"
+rpy2 = "^3.5.1"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
+geovoronoi = {extras = ["plotting"], version = "^0.4.0"}
+gaul = "^0.4.2"
+pears = "^0.1.2"
+jaxopt = "^0.3.1"
 pytest = "^5.2"
 jupyterlab = "^3.3.2"
 matplotlib = "^3.5.1"
+ipywidgets = "^7.7.0"
+cmasher = "^1.6.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
