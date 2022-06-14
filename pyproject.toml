@@ -32,6 +32,7 @@ ipywidgets = "^7.7.0"
 cmasher = "^1.6.3"
 folium = "^0.12.1-post.1"
 mapclassify = "^2.4.3"
+jupyterlab-code-formatter = "^1.4.11"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
