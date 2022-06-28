@@ -1,0 +1,6 @@
+/st/datasets/gdr3-catalog-0m-55m.h5
+/st/datasets/gdr3-catalog-55m-73m.h5
+/st/datasets/gdr3-catalog-73m-92m.h5
+/st/datasets/gdr3-catalog-92m-110m.h5
+/st/datasets/gdr3-catalog-110m-165m.h5
+/st/datasets/gdr3-catalog-165m-220m.h5
