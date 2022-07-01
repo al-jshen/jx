@@ -166,11 +166,6 @@ def main():
     df_apogee = df_apogee[df_apogee["LOGG"] < 3.5]
     df_apogee = df_apogee[df_apogee["LOGG_ERR"] < 0.12]
     df_apogee = df_apogee[(df_apogee["age_total_error"] / df_apogee["age"]) < 0.3]
-
-    matches, idx1, idx2 = np.intersect1d(
-        df_apogee["source_id"], f["ids"][:], return_indices=True
-    )
-
     df_apogee = df_apogee[df_apogee["sfd_ebv"] < 0.1]
 
     matches, idx_apogee_cut, idx_xp_cut = np.intersect1d(
@@ -261,7 +256,7 @@ def main():
         train[0], n_neighbors=args.knn_nneighbours + 1, return_distance=True
     )
 
-    xs = np.sort(dists_train[:, -1])[:-100]
+    xs = np.sort(dists_train[:, -1])
     ys = np.arange(1, len(xs) + 1) / float(len(xs))
     thresh = np.interp(args.knn_threshold, ys, xs)
 
